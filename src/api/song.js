@@ -59,25 +59,28 @@ export function getSongsUrl(songs) {
             const info = urlMid.data.midurlinfo[0]
             if (info && info.purl) {
               resolve(res)
-            } else {
-              retry()
             }
-          } else {
-            retry()
+            //  else {
+            //   retry()
+            // }
           }
-        } else {
-          retry()
+          //  else {
+          //   retry()
+          // }
         }
+        //  else {
+        //   retry()
+        // }
       })
     }
 
-    function retry() {
-      if (--tryTime >= 0) {
-        request()
-      } else {
-        reject(new Error('Can not get the songs url'))
-      }
-    }
+    // function retry() {
+    //   if (--tryTime >= 0) {
+    //     request()
+    //   } else {
+    //     reject(new Error('Can not get the songs url'))
+    //   }
+    // }
 
     request()
   })

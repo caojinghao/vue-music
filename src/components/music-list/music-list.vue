@@ -80,10 +80,12 @@
       this.minTranslateY = -this.imageHeight + RESERVEN_HEIGHT
       //设置歌曲列表的top属性为bgImg的高度，避免遮挡bgImg
       this.$refs.list.$el.style.top = `${this.imageHeight}px`
+      
     },
     created() {
       this.probeType = 3
       this.listenScroll = true
+      
     },
     computed: {
       bgStyle() {
