@@ -30,7 +30,7 @@
   "devDependencies": {
     "portfinder": "^1.0.13",
     "postcss-loader": "^2.0.8",
-    "node-notifier": "^5.1.2",
+    "node-notifier": "^8.0.1",
     "compression": "^1.7.0",
     "compression-webpack-plugin": "^0.4.0",
     "body-parser": "^1.18.2",
